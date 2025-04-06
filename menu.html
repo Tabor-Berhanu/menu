@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Hotel - Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="hotelVideo">
+            <source src="videos/hotel-restaurant.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1><span class="highlight">Grand</span> Hotel Restaurant</h1>
+            <nav>
+                <ul>
+                    <li><a href="#breakfast">Breakfast</a></li>
+                    <li><a href="#lunch">Lunch</a></li>
+                    <li><a href="#dinner">Dinner</a></li>
+                    <li><a href="#desserts">Desserts</a></li>
+                    <li><button id="cartBtn"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Menu Sections -->
+        <section id="breakfast" class="menu-section">
+            <h2><i class="fas fa-sun"></i> Breakfast</h2>
+            <div class="menu-items">
+                <!-- Breakfast items will be added by JavaScript -->
+            </div>
+        </section>
+
+        <section id="lunch" class="menu-section">
+            <h2><i class="fas fa-utensils"></i> Lunch</h2>
+            <div class="menu-items">
+                <!-- Lunch items will be added by JavaScript -->
+            </div>
+        </section>
+
+        <section id="dinner" class="menu-section">
+            <h2><i class="fas fa-moon"></i> Dinner</h2>
+            <div class="menu-items">
+                <!-- Dinner items will be added by JavaScript -->
+            </div>
+        </section>
+
+        <section id="desserts" class="menu-section">
+            <h2><i class="fas fa-ice-cream"></i> Desserts</h2>
+            <div class="menu-items">
+                <!-- Dessert items will be added by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Order</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="totalAmount">0.00</span></h3>
+            </div>
+            <button id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Grand Hotel Restaurant. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
